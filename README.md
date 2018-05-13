@@ -21,7 +21,7 @@ to IP address, so I used [xip.io](http://xip.io/).
 
 ### Update all packages
 
-Use `sudo apt-get` to update the packages' source. 
+Use `sudo apt-get update` to update the packages' source. 
 
 Then use `sudo apt-get upgrade` or `sudo apt-get dist-upgrade` to upgrade all
 packages.
@@ -63,6 +63,21 @@ Now we can log in to remote server from our local terminal!
 ``` shell
 $ ssh ubuntu@35.157.162.112 -p 22 -i ~/.ssh/aws
 ```
+
+
+### Disable root remote login for saftey reason
+
+And we have to disable root account remote login as early as possible by
+modifying `/etc/ssh/sshd_config`. 
+
+``` shell
+PermitRootLogin no
+```
+
+References: 
+
+- http://manpages.ubuntu.com/manpages/xenial/en/man5/sshd_config.5.html
+- https://www.digitalocean.com/community/tutorials/how-to-tune-your-ssh-daemon-configuration-on-a-linux-vps
 
 ### Configure the Uncomplicated Firewall (UFW)
 
