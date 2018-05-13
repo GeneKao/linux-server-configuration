@@ -120,7 +120,9 @@ $ sudo emacs /etc/sudoers.d/grader      # And change line 4 to grader ALL=(ALL) 
 
 And repeat the `ssh-keygen` process like before. 
 
-`ssh grader@35.157.162.112 -p 2200 -i ~/.ssh/grader`
+``` shell
+ssh grader@35.157.162.112 -p 2200 -i ~/.ssh/grader
+```
 
 
 ### Configure the local timezone to UTC
