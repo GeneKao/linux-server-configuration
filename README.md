@@ -60,7 +60,7 @@ $ service ssh restart
 
 Now we can log in to remote server from our local terminal! 
 
-`ssh ubuntu@35.157.162.112 -p 22 -i ~/.ssh/aws`
+`$ ssh ubuntu@35.157.162.112 -p 22 -i ~/.ssh/aws`
 
 
 ### Configure the Uncomplicated Firewall (UFW)
@@ -104,7 +104,7 @@ To                         Action      From
 
 Now we should be able to re-login to the server with different SSH port **2200**. 
 
-`ssh ubuntu@35.157.162.112 -p 2200 -i ~/.ssh/aws`
+`$ ssh ubuntu@35.157.162.112 -p 2200 -i ~/.ssh/aws`
 
 
 ### Create a reviewer's account *grader*
